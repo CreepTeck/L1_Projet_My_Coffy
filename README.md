@@ -15,7 +15,7 @@ Nous avons essayer d'imaginer les casiers de demain, et nous sommes venue a la c
 
 # My Coffy prototype :
 
-<img src="(https://github.com/CreepTeck/L1_Projet_My_Coffy/assets/171129776/d3927c06-9815-46ac-8cef-c7ebffe6b8c7)">
+<img src="https://github.com/CreepTeck/L1_Projet_My_Coffy/assets/171129776/d3927c06-9815-46ac-8cef-c7ebffe6b8c7.png">
 
 
 
