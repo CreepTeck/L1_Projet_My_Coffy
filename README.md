@@ -13,3 +13,11 @@ Nous avons essayer d'imaginer les casiers de demain, et nous sommes venue a la c
 - code
 - code avec ultrason(si pas de caméra Huskylens)
 
+# My Coffy prototype :
+
+<img src="![image my coffy](https://github.com/CreepTeck/L1_Projet_My_Coffy/assets/171129776/d3927c06-9815-46ac-8cef-c7ebffe6b8c7)">
+
+
+
+
+
