@@ -6,10 +6,10 @@ Description du projet :
 
 Nous avons essayer d'imaginer les casiers de demain, et nous sommes venue a la conclusion que celui-ci aurait un système d'ouverture par QR code mais aussi étant de grand fainéant une ouverture et une fermeture automatique.
 
-A travers ce github vous allez trouver:
+# A travers ce github vous allez trouver:
 
--Matériel dont vous avez besoin
--shéma 
--code
--code avec ultrason(si pas de caméra Huskylens)
+- Matériel dont vous avez besoin
+- shéma 
+- code
+- code avec ultrason(si pas de caméra Huskylens)
 
