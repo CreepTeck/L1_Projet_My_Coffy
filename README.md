@@ -34,8 +34,14 @@ Nous avons essayer d'imaginer les casiers de demain, et nous sommes venue a la c
 
 <img src="https://github.com/CreepTeck/L1_Projet_My_Coffy/assets/171129776/cd14f2f4-b53e-4d23-897a-c73f785ac11e">
 
-
 <img src="https://github.com/CreepTeck/L1_Projet_My_Coffy/assets/171129776/bfc6dd09-7d89-4b1c-84f4-10a6da819881">  
+
+# Schéma :
+
+<img src="https://github.com/CreepTeck/L1_Projet_My_Coffy/assets/171129776/c30be906-7f49-4bf9-9f28-a944ca6b0490">
+
+
+
 
 
 
