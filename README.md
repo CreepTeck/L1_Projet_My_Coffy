@@ -12,10 +12,16 @@ Nous avons essayer d'imaginer les casiers de demain, et nous sommes venue a la c
 - shéma 
 - code
 - code avec ultrason(si pas de caméra Huskylens)
-
+- branchements du matériels
+  
 # My Coffy prototype :
 
 <img src="https://github.com/CreepTeck/L1_Projet_My_Coffy/assets/171129776/a2e6e5e4-549d-4fe5-8f84-f7568b622d59">
+
+
+# Matériels nécessaires: 
+
+<img src="https://github.com/CreepTeck/L1_Projet_My_Coffy/assets/171129776/cf8d7798-fffc-42e4-b79c-bcca35a2e23a">
 
 
 
