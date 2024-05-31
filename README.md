@@ -21,7 +21,24 @@ Nous avons essayer d'imaginer les casiers de demain, et nous sommes venue a la c
 
 # Matériels nécessaires: 
 
-<img src="https://github.com/CreepTeck/L1_Projet_My_Coffy/assets/171129776/cf8d7798-fffc-42e4-b79c-bcca35a2e23a">
+- Caméra Huskylens
+- Carte Arduino UCA
+- Servo-Moteur SG90 9G
+- Poubelle
+- Carton
+- Fil à coudres 
+
+# branchements du matériels :
+
+<img src="https://github.com/CreepTeck/L1_Projet_My_Coffy/assets/171129776/02c7c41e-c02b-4a64-8b0c-f860bea55162">
+
+<img src="https://github.com/CreepTeck/L1_Projet_My_Coffy/assets/171129776/cd14f2f4-b53e-4d23-897a-c73f785ac11e">
+
+
+<img src="https://github.com/CreepTeck/L1_Projet_My_Coffy/assets/171129776/bfc6dd09-7d89-4b1c-84f4-10a6da819881">  
+
+
+
 
 
 
