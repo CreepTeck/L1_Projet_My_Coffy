@@ -1,0 +1,86 @@
+#include <Wire.h>
+#include "HUSKYLENS.h"
+#include <Servo.h>
+
+HUSKYLENS huskyLens;
+Servo servo;
+
+unsigned long lastActionTime = 0; // Temps du dernier changement d'état
+bool motorActive = false; // Indique si le moteur est actuellement actif
+bool motorReverse = false; // Indique si le moteur est en mode inverse
+bool motorPause = false; // Indique si le moteur est en pause
+
+const int correctQRCodeID = 1; // Remplacez par l'ID de votre QR code attendu
+
+void setup()
+{
+  // Initialiser HuskyLens
+  Serial.begin(115200);
+  Wire.begin();
+  huskyLens.begin(Wire);
+  while (!huskyLens.request())
+  {
+    Serial.println(F("Fail to request HuskyLens data"));
+    delay(100);
+  }
+  Serial.println(F("HuskyLens initialized"));
+
+  servo.attach(A3);
+  servo.write(90);  // Initialement arrêter le servo
+  delay(2000);
+}
+
+void loop()
+{
+  if (huskyLens.request())
+  {
+    HUSKYLENSResult result = huskyLens.read();
+    if (result.command == COMMAND_RETURN_BLOCK)
+    {
+      Serial.print("ID détecté: ");
+      Serial.println(result.ID);
+
+      if (result.ID == correctQRCodeID) // Vérifiez l'ID du QR code
+      {
+        // QR code correct détecté
+        motorActive = true;
+        motorPause = false;
+        motorReverse = false;
+        lastActionTime = millis(); // Enregistrer le temps de détection
+        servo.write(135);  // Activer le servo (ajuster cette valeur si nécessaire)
+        Serial.println("QR Code correct détecté : Activation du servo");
+      }
+    }
+  }
+  else
+  {
+    Serial.println(F("Fail to receive data from HuskyLens"));
+  }
+
+  // Gestion des états du servo moteur
+  if (motorActive && millis() - lastActionTime >= 8000)
+  {
+    motorActive = false;
+    motorPause = true;
+    lastActionTime = millis();
+    servo.write(90); // Arrêter le servo
+    Serial.println("Arrêt du servo après 3 secondes");
+  }
+  else if (motorPause && !motorReverse && millis() - lastActionTime >= 8000)
+  {
+    motorReverse = true;
+    motorPause = false;
+    lastActionTime = millis();
+    servo.write(45); // Inverser le servo (ajuster cette valeur si nécessaire)
+    Serial.println("Inversion du servo après la pause");
+  }
+  else if (motorReverse && millis() - lastActionTime >= 8000)
+  {
+    motorReverse = false;
+    servo.write(90); // Ramener le servo à la position initiale
+    Serial.println("Retour à la position initiale");
+  }
+
+  // Petite pause pour éviter de surcharger le microcontrôleur
+  delay(100);
+}
